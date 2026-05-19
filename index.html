@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PZ Barbershop — Estilo masculino en Quimbaya</title>
+    <meta name="description" content="PZ Barbershop en Quimbaya. Reserva con tu barbero de confianza en menos de un minuto." />
+    <meta name="author" content="PZ Barbershop" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" id="manifest-link" />
+    <script>
+      if (window.location.pathname.startsWith("/admin")) {
+        document.getElementById("manifest-link").setAttribute("href", "/manifest-admin.json");
+      }
+    </script>
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PZ Barbershop" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+
+    <meta property="og:title" content="PZ Barbershop" />
+    <meta property="og:description" content="Estilo masculino en Quimbaya. Reserva tu cita en menos de un minuto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icon-512.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/icon-512.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
